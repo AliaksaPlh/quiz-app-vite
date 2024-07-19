@@ -1,9 +1,10 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
+import "./button.component.scss";
 
 export default function ButtonComponent(props) {
   return (
-    <div>
+    <div className="button-div">
       <Button
         variant="contained"
         onClick={() => {

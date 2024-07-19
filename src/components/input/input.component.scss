@@ -1,0 +1,27 @@
+label {
+  color: hsl(0, 0%, 50%);
+  margin: 2px 0px;
+  padding: 2px;
+  input {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: hsl(0, 0%, 20%);
+    transition: all 100ms;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 2px;
+    padding: 2px;
+    &::placeholder {
+      box-shadow: 0 0 0 1px #2684ff;
+      border-color: #2684ff;
+    }
+  }
+  // input:focus {
+  //   border-color: #2684ff;
+  //   box-shadow: 0 0 0 1px #2684ff;
+  //   color: red;
+  // }
+}
