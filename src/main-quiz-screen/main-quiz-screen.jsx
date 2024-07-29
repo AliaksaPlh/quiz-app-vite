@@ -7,12 +7,8 @@ import TrueFalseButtons from "../components/unswer-button/true-false-buttons/tru
 import "./main-quiz-screen.scss";
 
 export default function MainQuizScreen() {
-  const [isActive, setActive] = useState("false");
-  function ToggleClass() {
-    setActive(!isActive);
-  }
   return (
-    <div className={isActive ? "main-quiz-screen" : "main-quiz-screen-none"}>
+    <div className="main-quiz-screen">
       <h1>MainQuizScreen</h1>
       <QuestionText text="Lorem ipsum question?" />
       <TrueFalseButtons />
