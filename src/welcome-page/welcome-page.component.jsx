@@ -3,22 +3,13 @@ import SelectComponent from "../components/select/select.component";
 import InputComponent from "../components/input/input.component";
 import { options } from "../const/options.const";
 import ButtonComponent from "../components/buttons/button.component";
-import "./main-page.component.scss";
+import "./welcome-page.component.scss";
 import MainQuizScreen from "../main-quiz-screen/main-quiz-screen";
 
-export default function MainPageComponent() {
-  const [isActive, setActive] = useState("false");
-  function ToggleClass() {
-    setActive(!isActive);
-  }
-
-  // function show() {
-  //   return { MainQuizScreen };
-  // }
-
+export default function WelcomePageComponent({ onQuizStart }) {
   return (
     <>
-      <div className={isActive ? "start-quiz-frame" : "start-quiz-frame-none"}>
+      <div className="start-quiz-frame">
         <h1>
           <span>Quiz</span>
         </h1>
@@ -37,7 +28,7 @@ export default function MainPageComponent() {
           ></InputComponent>
         </div>
         <div className="buttonComponent">
-          <ButtonComponent label="Start quiz" action={ToggleClass} />
+          <ButtonComponent label="Start quiz" action={onQuizStart} />
           <ButtonComponent label="See my stats" />
         </div>
       </div>

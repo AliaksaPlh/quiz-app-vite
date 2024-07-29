@@ -1,11 +1,11 @@
 import "./App.css";
-import MainPageComponent from "./main-page/main-page.component";
+import WelcomePageComponent from "./welcome-page/welcome-page.component";
 import MainQuizScreen from "./main-quiz-screen/main-quiz-screen";
 
 function App() {
   return (
     <>
-      <MainPageComponent></MainPageComponent>
+      <WelcomePageComponent />
 
       <MainQuizScreen />
     </>
