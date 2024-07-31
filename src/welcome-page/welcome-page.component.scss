@@ -1,5 +1,5 @@
-div.stert-quiz-frame {
-  // display: flex;
+div.start-quiz-frame {
+  display: block; // display: flex;
   // background-color: #e6efe9;
   h1 {
     color: #1976d2;
@@ -31,8 +31,12 @@ div.stert-quiz-frame {
   }
   div.buttonComponent {
     display: flex;
+    justify-content: center;
     * {
       min-width: 137px;
     }
   }
+}
+div.start-quiz-frame-none {
+  display: none;
 }

@@ -1,6 +1,6 @@
 export const options = {
   category: [
-    { value: "movie", label: "Movie" },
+    { value: "geography", label: "Geography" },
     { value: "books", label: "Books" },
     { value: "scince", label: "Scince" },
   ],
